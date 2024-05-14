@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: antiquewhite;
+
+}
+/* .container{
+  justify-content: center;
+  align-items: center;
+} */
+.balance{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f16161;
+  height: 70px;
+  color: rgb(252, 248, 248);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+}.row1 span{
+  margin-top: 0px;
+  font-size: 12px;
+}
+.row1 h3{
+  margin-top: 20px;
+}
+.row2 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+/* .row2 p{
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 40px;
+  z-index: 50;
+} */
+.chart-container {
+  padding: 20px 30px 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 290px;
+  height: 320px;
+  margin: 0 0;
+}
+.chart-container h3{
+  letter-spacing: .1px;
+  margin-bottom: 35px;
+}
+title{
+  background-color: black;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.chart-bar {
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #f16161;
+  border-radius: 2px;
+  position: relative;
+}
+.chart-bar:hover{
+  background-color: #f7a0a0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.current-day {
+  background-color:  #b0d3f8 ; 
 }
+.current-day:hover{
+  background-color: #bed7f3;
+}
+
+span{
+  position: absolute;
+  margin-top: 70px;
+}
+.day {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.day p{
+  margin-top: 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+}
+.month-total p{
+  margin-top: 10px;
+ color: gray;
+ font-size: 12px;
+}
+.month-total h3{
+  margin-top: -10px;
+   
+}
+.last-month p{
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+   margin: 20px 10px 10px 30px;
+}
+.last-month span{
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+@media  screen and  (max-width:300px) {
+  
+  
+  .chart-container{
+    width: 320px;
+    min-height: 390px;
+    padding: 30px 40px;
+
+  }
+  .chart-container h3{
+    font-size: 15px;
+  }
+  .chart-bar {
+    width: 23px;
+  text-align: center;
+  margin-right: 7px;
+  }
+  .day p{
+     margin-top: 10px; 
+     margin-right: 8px;
+     font-size: 13px; 
+     margin-bottom: 20px;
+   }
+} 
